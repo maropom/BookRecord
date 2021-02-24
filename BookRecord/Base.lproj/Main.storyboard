@@ -58,11 +58,11 @@
             </objects>
             <point key="canvasLocation" x="1502" y="-241"/>
         </scene>
-        <!--Item-->
+        <!--読書中-->
         <scene sceneID="AZT-pi-12u">
             <objects>
                 <navigationController id="hFS-jg-0rH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SEo-lW-aFT"/>
+                    <tabBarItem key="tabBarItem" title="読書中" image="book" catalog="system" selectedImage="book.fill" id="SEo-lW-aFT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYX-XU-XcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -76,11 +76,11 @@
             </objects>
             <point key="canvasLocation" x="578" y="495"/>
         </scene>
-        <!--Item-->
+        <!--本棚-->
         <scene sceneID="9Ei-GY-DNy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xwm-vI-8Zx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="f35-g4-BNC"/>
+                    <tabBarItem key="tabBarItem" title="本棚" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="f35-g4-BNC"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zQI-cQ-vvN">
@@ -116,6 +116,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
