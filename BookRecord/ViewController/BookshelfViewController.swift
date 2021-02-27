@@ -7,7 +7,8 @@
 
 import UIKit
 
-class BookshelfViewController: UIViewController {
+class BookshelfViewController: UIViewController, UICollectionViewDataSource,
+                               UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
