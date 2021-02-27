@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vic-DL-vfO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i6K-nd-67r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ory-Oj-oF8">
-                                <rect key="frame" x="0.0" y="44" width="386" height="574"/>
+                                <rect key="frame" x="-11" y="0.0" width="386" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v2F-i8-G4k">
@@ -73,12 +73,12 @@
         <!--読書中-->
         <scene sceneID="AZT-pi-12u">
             <objects>
-                <navigationController id="hFS-jg-0rH" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="hFS-jg-0rH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="読書中" image="book" catalog="system" selectedImage="book.fill" id="SEo-lW-aFT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYX-XU-XcG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2cV-Qd-mCA"/>
@@ -91,13 +91,13 @@
         <!--本棚-->
         <scene sceneID="9Ei-GY-DNy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xwm-vI-8Zx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="xwm-vI-8Zx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="本棚" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="f35-g4-BNC"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zQI-cQ-vvN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -113,6 +113,15 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vic-DL-vfO" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="A6d-1S-5n1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="laE-rj-a2m">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="GHG-ts-XJS">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z3W-th-ieQ">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -125,6 +134,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HN4-Md-cpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-250" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XJV-Hz-UV9">
+            <objects>
+                <navigationController id="i6K-nd-67r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7wE-ui-TrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vic-DL-vfO" kind="relationship" relationship="rootViewController" id="TqQ-Vc-WMc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcR-vj-ENm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1129" y="82"/>
         </scene>
     </scenes>
     <resources>
