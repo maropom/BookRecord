@@ -113,22 +113,14 @@
             </objects>
             <point key="canvasLocation" x="577" y="-240"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Book Tab Bar Controller-->
         <scene sceneID="7z3-wg-zdQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vic-DL-vfO" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vic-DL-vfO" customClass="BookTabBarController" customModule="BookRecord" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="A6d-1S-5n1">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="laE-rj-a2m">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GHG-ts-XJS">
-                                <rect key="frame" x="177" y="0.0" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" image="plus_64"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="A6d-1S-5n1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z3W-th-ieQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -163,7 +155,6 @@
         <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="books.vertical" catalog="system" width="128" height="103"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
-        <image name="plus_64" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
