@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BookshelfViewController: UIViewController ,UICollectionViewDataSource,
+class BookshelfViewController: UIViewController, UICollectionViewDataSource,
                                UICollectionViewDelegate {
 
     // サムネイル画像の名前
